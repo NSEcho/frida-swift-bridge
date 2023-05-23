@@ -58,7 +58,7 @@ export function getPrivateAPI(): API {
         return cachedPrivateAPI;
     }
 
-    Module.ensureInitialized("CoreFoundation");
+    Module.ensureInitialized("Foundation");
 
     try {
         Module.load("/System/Library/PrivateFrameworks/CoreSymbolication.framework/CoreSymbolication");
