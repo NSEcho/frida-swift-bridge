@@ -58,6 +58,9 @@ export function getPrivateAPI(): API {
         return cachedPrivateAPI;
     }
 
+    var imports = Module._enumerateImports();
+    console.log(imports);
+
     Module.ensureInitialized("Foundation");
 
     try {
